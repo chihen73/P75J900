@@ -1,7 +1,10 @@
 # P75J900 Final Project
+
 2023 Spring COMPUTER SYSTEMS ARCHITECTURE AND BIG DATA PLATFORMS
 Final Project Kubernetes **Operator Pattern**
+
 ## GKE create cluster
+
 **Cloud Shell**
 設定專案
 
@@ -13,6 +16,7 @@ Final Project Kubernetes **Operator Pattern**
 ```gcloud container clusters create operator-demo-cluster --num-nodes 3 --machine-type n1-standard-1 --zone asia-east1-c```
 
 ## ConfigWatcher
+
 [Operator example README](https://github.com/k8spatterns/examples/blob/main/advanced/Operator/README.adoc)
 
 Enable shell autocompletion ans alias
