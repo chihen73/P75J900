@@ -57,7 +57,7 @@ Before deploying the web app, open another terminal and tail the log of our Oper
 
 Now, create the web application:
 
-`kubectl apply -f https://raw.githubusercontent.com/chihen73/P75J900/main/web-app.yml`
+`kubectl apply -f https://raw.githubusercontent.com/chihen73/P75J900/main/ConfigWatcher/web-app.yml`
 
 Access the application:
 
