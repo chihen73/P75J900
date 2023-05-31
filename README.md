@@ -1,7 +1,7 @@
 # P75J900 Final Project
 
-2023 Spring COMPUTER SYSTEMS ARCHITECTURE AND BIG DATA PLATFORMS
-Final Project Kubernetes **Operator Pattern**
+2023 Spring COMPUTER SYSTEMS ARCHITECTURE AND BIG DATA PLATFORMS Final Project
+**Kubernetes Operator Pattern**
 
 ## GKE create cluster
 
@@ -207,9 +207,9 @@ Create a Fresh At Resource
 
 ### Clean-up
 
-Delete GKE cluster!!!
-Delete GKE cluster!!!
-Delete GKE cluster!!!
+Delete GKE cluster!!!<br>
+Delete GKE cluster!!!<br>
+Delete GKE cluster!!!<br>
 
 ---
 
