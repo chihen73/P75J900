@@ -149,7 +149,8 @@ curl -L -o kubebuilder https://github.com/kubernetes-sigs/kubebuilder/releases/d
 chmod +x kubebuilder && mv kubebuilder /usr/local/bin/
 ```
 Install tree<br>
-`sudo apt install tree`
+`apt update`<br>
+`apt install tree`
 
 Logout root mode<br>
 `exit`
