@@ -184,7 +184,7 @@ curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/main.go 
 curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/Makefile > Makefile
 wget https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at-crd-instance.yaml
 ```
-**(In another terminal)** Observing<br>
+**(In another terminal)** Watching resources<br>
 `watch -n 1 kubectl get ats,pods -o wide`
 
 Install CRDs into the K8s cluster<br>
