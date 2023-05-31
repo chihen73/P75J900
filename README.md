@@ -104,9 +104,7 @@ kubectl delete -f https://k8spatterns.io/Operator/config-watcher-crd.yml
 ## Develop an Operator with Kubebuilder
 
 ### The at Command
-
-Using GCP VM
-Using Cloud Shell
+Using Cloud Shell access to GCP VM<br>
 
 Install at command<br>
 `sudo apt update`<br>
