@@ -126,8 +126,6 @@ Scheduling the script<br>
 Observe results<br>
 `watch -n 1 cat /tmp/at-example-result.txt`
 
----
-
 ### AtOperator
 
 #### Demo environment setup
