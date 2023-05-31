@@ -10,26 +10,25 @@ Final Project **Kubernetes Operator Pattern**<br>
 
 [Reset Google CloudShell](https://cloud.google.com/shell/docs/resetting-cloud-shell)
 
-**Setting project**<br>
+Setting project<br>
 `gcloud config set project [PROJECT_ID]`<br>
 `gcloud config set project lfclass-356014`
 
-**Create Cluster**<br>
-```gcloud container clusters create operator-demo-cluster --num-nodes 3 --machine-type n1-standard-1 --zone asia-east1-c --cluster-version 1.26.3-gke.1000```
+Create Cluster<br>
+`gcloud container clusters create operator-demo-cluster --num-nodes 3 --machine-type n1-standard-1 --zone asia-east1-c --cluster-version 1.26.3-gke.1000`
 
-**cluster version**<br>
+cluster version<br>
 `1.23.17-gke.1700`<br>
 `1.24.11-gke.1000`<br>
 `1.25.8-gke.500`<br>
 `1.26.3-gke.1000`
 
+Enable shell autocompletion ans alias<br>
+`echo 'source <(kubectl completion bash)' >>~/.bashrc`
+
 ## ConfigWatcher
 
 [Operator example README](https://github.com/k8spatterns/examples/blob/main/advanced/Operator/README.adoc)<br>
-
-Enable shell autocompletion ans alias
-
-`echo 'source <(kubectl completion bash)' >>~/.bashrc`
 
 Watching resources
 
