@@ -193,8 +193,8 @@ Install CRDs into the K8s cluster<br>
 **(In another terminal)** Run a controller from your host<br>
 `make run`
 
-Get a server time that will be two minutes from now:<br>
-`date -d "$(date --utc +%FT%TZ) + 2 min" +%FT%TZ`
+Get a server time that will be one minutes from now:<br>
+`date -d "$(date --utc +%FT%TZ) + 1 min" +%FT%TZ`
 
 Copy the date and paste it into the quote for the schedule field of at-crd-instance.yaml<br>
 `vim at-crd-instance.yaml`
