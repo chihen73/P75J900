@@ -32,7 +32,7 @@ Enable shell autocompletion ans alias<br>
 
 Watching resources
 
-`watch -n 1 kubectl get cw,pods,configmaps`
+`watch -n 1 kubectl get cw,pods,configmaps -o wide`
 
 ### Create CRD
 
@@ -201,7 +201,7 @@ Create a Fresh At Resource<br>
 `kubectl apply -f at-crd-instance.yaml`
 
 **(In another terminal)** Observe results<br>
-`watch -n 1 kubectl get ats,pods`
+`watch -n 1 kubectl get ats,pods -o wide`
 
 ### Clean-up<br>
 
