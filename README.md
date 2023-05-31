@@ -1,7 +1,8 @@
 # P75J900 Final Project
 
 2023 Spring COMPUTER SYSTEMS ARCHITECTURE AND BIG DATA PLATFORMS Final Project<br>
-**Kubernetes Operator Pattern**
+**Kubernetes Operator Pattern**<br>
+[GitHub Rrpo](https://github.com/chihen73/P75J900)
 
 ## GKE create cluster
 
@@ -9,22 +10,22 @@
 
 [Reset Google CloudShell](https://cloud.google.com/shell/docs/resetting-cloud-shell)
 
-**Setting project**
-`gcloud config set project [PROJECT_ID]`
+**Setting project**<br>
+`gcloud config set project [PROJECT_ID]`<br>
 `gcloud config set project lfclass-356014`
 
-**Create Cluster**
+**Create Cluster**<br>
 ```gcloud container clusters create operator-demo-cluster --num-nodes 3 --machine-type n1-standard-1 --zone asia-east1-c --cluster-version 1.26.3-gke.1000```
 
-**cluster version**
-`1.23.17-gke.1700`
-`1.24.11-gke.1000`
-`1.25.8-gke.500`
+**cluster version**<br>
+`1.23.17-gke.1700`<br>
+`1.24.11-gke.1000`<br>
+`1.25.8-gke.500`<br>
 `1.26.3-gke.1000`
 
 ## ConfigWatcher
 
-[Operator example README](https://github.com/k8spatterns/examples/blob/main/advanced/Operator/README.adoc)
+[Operator example README](https://github.com/k8spatterns/examples/blob/main/advanced/Operator/README.adoc)<br>
 
 Enable shell autocompletion ans alias
 
@@ -95,7 +96,7 @@ After establishing the connection between the ConfigMap and Pods, change the con
 ```
 kubectl delete -f https://k8spatterns.io/Operator/config-watcher-sample.yml
 kubectl delete -f https://raw.githubusercontent.com/chihen73/P75J900/main/ConfigWatcher/web-app.yml
-kubectl delete -f https://k8spatterns.io/Operator/config-watcher-operator.yml
+kubectl delete -f https://k8spatterns.io/Operator/config-watcher-operator.yml<br>
 kubectl delete configmap config-watcher-operator
 kubectl delete -f https://k8spatterns.io/Operator/config-watcher-crd.yml
 ```
@@ -108,21 +109,21 @@ kubectl delete -f https://k8spatterns.io/Operator/config-watcher-crd.yml
 Using GCP VM
 Using Cloud Shell
 
-Install at command
-`sudo apt update`
-`sudo apt install at`
-`sudo systemctl enable --now atd`
-`at -V`
+Install at command<br>
+`sudo apt update`<br>
+`sudo apt install at`<br>
+`sudo systemctl enable --now atd`<br>
+`at -V`<br>
 `whatis at`
 
-Downloading script
+Downloading script<br>
 `wget https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at-example.txt`
 
-Scheduling the script
-`sudo rm -rf /tmp/at-example-result.txt`
+Scheduling the script<br>
+`sudo rm -rf /tmp/at-example-result.txt`<br>
 `at -M -v -f at-example.txt 'now + 1 minute'`
 
-Observe results
+Observe results<br>
 `watch -n 1 cat /tmp/at-example-result.txt`
 
 ---
@@ -131,17 +132,17 @@ Observe results
 
 #### Demo environment setup
 
-Using Cloud Shell
-Change to root mode
+Using Cloud Shell<br>
+Change to root mode<br>
 `sudo -i`
 
-Uninstall GO
-`which go`
+Uninstall GO<br>
+`which go`<br>
 `sudo rm -rvf /usr/local/go/bin/go`
 
-Install GO 1.17.13
-`wget https://go.dev/dl/go1.17.13.linux-amd64.tar.gz`
-`rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.13.linux-amd64.tar.gz`
+Install GO 1.17.13<br>
+`wget https://go.dev/dl/go1.17.13.linux-amd64.tar.gz`<br>
+`rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.13.linux-amd64.tar.gz`<br>
 `go version`
 
 Install Kubebuilder
@@ -152,20 +153,20 @@ arch=$(go env GOARCH)
 curl -L -o kubebuilder https://github.com/kubernetes-sigs/kubebuilder/releases/download/${version}/kubebuilder_${os}_${arch}
 chmod +x kubebuilder && mv kubebuilder /usr/local/bin/
 ```
-Install tree
+Install tree<br>
 `sudo apt install tree`
 
-Logout root mode
+Logout root mode<br>
 `exit`
 
-Setting environment variables
-`echo export PATH=$PATH:/usr/local/go/bin >>~/.bashrc`
+Setting environment variables<br>
+`echo export PATH=$PATH:/usr/local/go/bin >>~/.bashrc`<br>
 `echo export GOPATH=$PWD/go >>~/.bashrc`
 
 #### Building AtOperator
 
-Initialize Kuberbuilder
-`mkdir -p $GOPATH/src/example; cd $GOPATH/src/example`
+Initialize Kuberbuilder<br>
+`mkdir -p $GOPATH/src/example; cd $GOPATH/src/example`<br>
 `kubebuilder init --domain d2iq.com`
 
 kubebuilder create a new API
@@ -187,35 +188,35 @@ curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/main.go 
 curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/Makefile > Makefile
 wget https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at-crd-instance.yaml
 ```
-Install CRDs into the K8s cluster
+Install CRDs into the K8s cluster<br>
 `make install`
 
-**(In another terminal)** Run a controller from your host
+**(In another terminal)** Run a controller from your host<br>
 `make run`
 
-Get a server time that will be two minutes from now:
+Get a server time that will be two minutes from now:<br>
 `date -d "$(date --utc +%FT%TZ) + 2 min" +%FT%TZ`
 
-Copy the date and paste it into the quote for the schedule field of at-crd-instance.yaml
+Copy the date and paste it into the quote for the schedule field of at-crd-instance.yaml<br>
 `vim at-crd-instance.yaml`
 
-Create a Fresh At Resource
+Create a Fresh At Resource<br>
 `kubectl apply -f at-crd-instance.yaml`
 
-**(In another terminal)** Observe results
+**(In another terminal)** Observe results<br>
 `watch -n 1 kubectl get ats,pods`
 
-### Clean-up
+### Clean-up<br>
 
 Delete GKE cluster!!!<br>
 Delete GKE cluster!!!<br>
-Delete GKE cluster!!!<br>
+Delete GKE cluster!!!
 
 ---
 
 ## Reference
 
-[Kubernetes Patterns, 2nd Edition.](https://www.oreilly.com/library/view/kubernetes-patterns-2nd/9781098131678/) By Bilgin Ibryam, Roland Huss. O'Reilly Media, Inc. March 2023.
+[Kubernetes Patterns, 2nd Edition.](https://www.oreilly.com/library/view/kubernetes-patterns-2nd/9781098131678/) By Bilgin Ibryam, Roland Huss. O'Reilly Media, Inc. March 2023.<br>
 [Kubernetes Intermediate in 3 Weeks—with Interactivity](https://learning.oreilly.com/live-events/kubernetes-intermediate-in-3-weekswith-interactivity/0636920056954/), Week 1: Designing with Operators. By Jonathan Johnson. O'Reilly Media, Inc. April 2023.
 
 ## Resource
