@@ -2,7 +2,7 @@
 
 2023 Spring COMPUTER SYSTEMS ARCHITECTURE AND BIG DATA PLATFORMS<br>
 Final Project **Kubernetes Operator Pattern**<br>
-[GitHub Rrpo](https://github.com/chihen73/P75J900)
+[Project github Repo](https://github.com/chihen73/P75J900)
 
 ## GKE create cluster
 
