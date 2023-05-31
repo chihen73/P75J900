@@ -157,7 +157,8 @@ Logout sudo mode<br>
 
 Setting environment variables<br>
 `echo export PATH=$PATH:/usr/local/go/bin >>~/.bashrc`<br>
-`echo export GOPATH=$PWD/go >>~/.bashrc`
+`echo export GOPATH=$PWD/go >>~/.bashrc`<br>
+`go env`
 
 #### Building AtOperator
 
