@@ -1,6 +1,6 @@
 # P75J900 Final Project
 
-2023 Spring COMPUTER SYSTEMS ARCHITECTURE AND BIG DATA PLATFORMS Final Project
+2023 Spring COMPUTER SYSTEMS ARCHITECTURE AND BIG DATA PLATFORMS Final Project<br>
 **Kubernetes Operator Pattern**
 
 ## GKE create cluster
