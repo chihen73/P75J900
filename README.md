@@ -128,7 +128,7 @@ Observe results<br>
 #### Demo environment setup
 
 Using Cloud Shell<br>
-Change to root mode<br>
+Change to sudo mode<br>
 `sudo -i`
 
 Uninstall GO<br>
@@ -152,7 +152,7 @@ Install tree<br>
 `apt update`<br>
 `apt install tree`
 
-Logout root mode<br>
+Logout sudo mode<br>
 `exit`
 
 Setting environment variables<br>
