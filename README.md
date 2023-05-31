@@ -10,19 +10,17 @@ Final Project Kubernetes **Operator Pattern**
 [Reset Google CloudShell](https://cloud.google.com/shell/docs/resetting-cloud-shell)
 
 **Setting project**
-```gcloud config set project [PROJECT_ID]```
-```gcloud config set project lfclass-356014```
+`gcloud config set project [PROJECT_ID]`
+`gcloud config set project lfclass-356014`
 
 **Create Cluster**
-
 ```gcloud container clusters create operator-demo-cluster --num-nodes 3 --machine-type n1-standard-1 --zone asia-east1-c --cluster-version 1.26.3-gke.1000```
 
-*cluster version*
+**cluster version**
 `1.23.17-gke.1700`
 `1.24.11-gke.1000`
 `1.25.8-gke.500`
 `1.26.3-gke.1000`
-
 
 ## ConfigWatcher
 
@@ -104,10 +102,11 @@ kubectl delete -f https://k8spatterns.io/Operator/config-watcher-crd.yml
 ---
 
 ## Develop an Operator with Kubebuilder
+
 ### The at Command
 
 Using GCP VM
-Using Cloud Shell 
+Using Cloud Shell
 
 Install at command
 `sudo apt update`
@@ -180,8 +179,7 @@ kubebuilder create api \
  --kind At
 ```
 
-Copy function codes from Repo 
-
+Copy function codes from Repo
 ```
 curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at_types.go > api/v1alpha1/at_types.go
 curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at_controller.go > controllers/at_controller.go
@@ -192,7 +190,7 @@ wget https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at-crd-i
 Install CRDs into the K8s cluster
 `make install`
 
-**(In another terminal)** Run a controller from your host 
+**(In another terminal)** Run a controller from your host
 `make run`
 
 Get a server time that will be two minutes from now:
@@ -209,11 +207,9 @@ Create a Fresh At Resource
 
 ### Clean-up
 
-<font color=#FF0000>
-Delete GKE cluster!!!<br>
-Delete GKE cluster!!!<br>
-Delete GKE cluster!!!<br>
-</font>
+Delete GKE cluster!!!
+Delete GKE cluster!!!
+Delete GKE cluster!!!
 
 ---
 
