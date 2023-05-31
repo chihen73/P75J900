@@ -176,7 +176,6 @@ kubebuilder create api \
  --resource \
  --kind At
 ```
-
 Copy function codes from Repo
 ```
 curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at_types.go > api/v1alpha1/at_types.go
@@ -185,6 +184,9 @@ curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/main.go 
 curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/Makefile > Makefile
 wget https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at-crd-instance.yaml
 ```
+**(In another terminal)** Observing<br>
+`watch -n 1 kubectl get ats,pods -o wide`
+
 Install CRDs into the K8s cluster<br>
 `make install`
 
@@ -199,9 +201,6 @@ Copy the date and paste it into the quote for the schedule field of at-crd-insta
 
 Create a Fresh At Resource<br>
 `kubectl apply -f at-crd-instance.yaml`
-
-**(In another terminal)** Observe results<br>
-`watch -n 1 kubectl get ats,pods -o wide`
 
 ### Clean-up<br>
 
