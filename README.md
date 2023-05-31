@@ -95,7 +95,7 @@ After establishing the connection between the ConfigMap and Pods, change the con
 ```
 kubectl delete -f https://k8spatterns.io/Operator/config-watcher-sample.yml
 kubectl delete -f https://raw.githubusercontent.com/chihen73/P75J900/main/ConfigWatcher/web-app.yml
-kubectl delete -f https://k8spatterns.io/Operator/config-watcher-operator.yml<br>
+kubectl delete -f https://k8spatterns.io/Operator/config-watcher-operator.yml
 kubectl delete configmap config-watcher-operator
 kubectl delete -f https://k8spatterns.io/Operator/config-watcher-crd.yml
 ```
