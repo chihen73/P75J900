@@ -114,7 +114,7 @@ Install at command<br>
 `whatis at`
 
 Downloading script<br>
-`wget https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at-example.txt`
+`curl https://raw.githubusercontent.com/chihen73/P75J900/main/AtOperator/at-example.txt > at-example.txt`
 
 Scheduling the script<br>
 `sudo rm -rf /tmp/at-example-result.txt`<br>
