@@ -127,7 +127,7 @@ Observe results<br>
 
 #### Demo environment setup
 
-Using Cloud Shell<br>
+Using Cloud Shell access to GKE Cluster<br>
 Change to sudo mode<br>
 `sudo -i`
 
