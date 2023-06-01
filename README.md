@@ -52,6 +52,8 @@ The operator script is stored in a ConfigMap:
 
 `kubectl create configmap config-watcher-operator --from-file=./config-watcher-operator.sh`
 
+`sudo rm -rf config-watcher-operator.sh`
+
 To create deployment in the current namespace, run the following:
 
 `kubectl apply -f https://k8spatterns.io/Operator/config-watcher-operator.yml`
