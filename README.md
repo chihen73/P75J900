@@ -221,5 +221,10 @@ Delete GKE cluster!!!
 [Kubernetes Intermediate in 3 Weeks—with Interactivity](https://learning.oreilly.com/live-events/kubernetes-intermediate-in-3-weekswith-interactivity/0636920056954/), Week 1: Designing with Operators. By Jonathan Johnson. O'Reilly Media, Inc. April 2023.
 
 ## Resource
-
-[CNCF Operator White Paper](https://tag-app-delivery.cncf.io/whitepapers/operator/)
+[Linux Foundation](https://www.linuxfoundation.org/)(LF)<br>
+[Cloud Native Computing Foundation](https://www.cncf.io/)(CNCF)<br>
+[CNCF Operator White Paper](https://tag-app-delivery.cncf.io/whitepapers/operator/)<br>
+[Kubernetes](https://kubernetes.io/)<br>
+[Kubernetes Documentation](https://kubernetes.io/docs/home/)<br>
+[Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)<br>
+[O’Reilly Media](https://www.oreilly.com/)
