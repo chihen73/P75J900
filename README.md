@@ -196,6 +196,8 @@ Install CRDs into the K8s cluster<br>
 **(In another terminal)** Run a controller from your host<br>
 `make run`
 
+#### Running AtOperator
+
 Get a server time that will be one minutes from now:<br>
 `date -d "$(date --utc +%FT%TZ) + 1 min" +%FT%TZ`
 
