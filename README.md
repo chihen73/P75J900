@@ -149,6 +149,7 @@ os=$(go env GOOS)
 arch=$(go env GOARCH)
 curl -L -o kubebuilder https://github.com/kubernetes-sigs/kubebuilder/releases/download/${version}/kubebuilder_${os}_${arch}
 chmod +x kubebuilder && mv kubebuilder /usr/local/bin/
+kubebuilder version
 ```
 Install tree<br>
 `apt update`<br>
