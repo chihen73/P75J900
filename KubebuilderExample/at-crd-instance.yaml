@@ -1,0 +1,7 @@
+apiVersion: cnat.d2iq.com/v1alpha1
+kind: At
+metadata:
+  name: at-crd-instance
+spec:
+  schedule: "paste date string here"
+  command: 'echo "Happiness is when what you think, what you say, and what you do are in harmony."'
